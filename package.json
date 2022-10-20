@@ -13,18 +13,10 @@
   "scripts": {
     "build": "rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "format:check": "prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'",
-    "format:write": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest",
     "release": "yarn build && np"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn format:write",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "jest": {
     "setupFilesAfterEnv": [
@@ -50,7 +42,6 @@
     "@types/react-transition-group": "^4.4.0",
     "babel-loader": "^8.1.0",
     "eslint": "^7.20.0",
-    "husky": "4.3.5",
     "jest": "^26.6.3",
     "jest-styled-components": "^7.0.3",
     "np": "^7.4.0",
