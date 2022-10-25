@@ -5,7 +5,7 @@ import { SvgProps } from "../types";
 const Icon: React.FC<SvgProps> = (props) => {
   return (
     <Svg viewBox="0 0 100 100" {...props}>
-      <circle cx="50" cy="50" r="50" fill="#00ffff" />
+      <circle cx="50" cy="50" r="50" fill="#ffffff" />
       <g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)"
         fill="#000000" stroke="none">
         <path d="M386 854 c-3 -9 -9 -40 -12 -69 l-7 -53 -76 -16 -76 -15 76 5 77 5
